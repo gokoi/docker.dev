@@ -2,10 +2,7 @@
 ARG VARIANT="1"
 FROM mcr.microsoft.com/vscode/devcontainers/go:0-${VARIANT}
 
-go get -u github.com/kyoh86/richgo
+ADD install.sh /tmp
+RUN chmod +x /tmp/install.sh && ./install.sh && rm -f /tmp/install.sh
 
 ADD home /tmp/home
-
-USER vscode
-
-cp /tmp/home/* $HOME && chown -R vscode:vscode *
