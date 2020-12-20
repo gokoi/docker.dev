@@ -1,0 +1,9 @@
+[user]
+	email = gokoi@users.noreply.github.com
+	name = GoKoi
+[alias]
+	co = checkout
+[push]
+	default = current
+[core]
+	excludesfile = ~/.gitignore_global
