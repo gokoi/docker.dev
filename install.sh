@@ -2,7 +2,8 @@
 
 set -e
 
-
+apt-get install software-properties-common
+apt-get update
 apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 apt-add-repository https://cli.github.com/packages
 apt update
