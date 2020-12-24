@@ -11,4 +11,4 @@ apt-get -y install gh
 
 su vscode
 go get -u github.com/kyoh86/richgo
-cp /tmp/home/* $HOME && chown -R vscode:vscode *
+# cp /tmp/home/* $HOME && chown -R vscode:vscode *
