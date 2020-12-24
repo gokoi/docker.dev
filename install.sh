@@ -2,12 +2,12 @@
 
 set -e
 
-apt-get update
-apt-get install software-properties-common
+apt-get -y update
+apt-get -y install software-properties-common
 apt-key adv --keyserver keyserver.ubuntu.com --recv-key C99B11DEB97541F0
 apt-add-repository https://cli.github.com/packages
-apt update
-apt install gh
+apt-get -y update
+apt-get -y install gh
 go get -u github.com/kyoh86/richgo
 
 su vscode
