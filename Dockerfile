@@ -3,7 +3,7 @@ ARG VARIANT="1"
 FROM mcr.microsoft.com/vscode/devcontainers/go:0-${VARIANT}
 
 ADD install.sh /tmp
-COPY home /tmp/home
+COPY home /home/vscode
 
 RUN chmod +x /tmp/install.sh && /tmp/install.sh && rm -f /tmp/install.sh
 
