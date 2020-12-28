@@ -9,7 +9,7 @@ apt-add-repository https://cli.github.com/packages
 apt-get -y update
 apt-get -y install gh
 
-chown -R vscode:vscode /home/vscode/*
+chown -R vscode:vscode /home/vscode
 
 su vscode
 go get -u github.com/kyoh86/richgo
